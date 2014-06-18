@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{040556F1-22C0-47A5-B42E-5F511D129A00}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IOKI.Learning.Demo.WEB</RootNamespace>
+    <AssemblyName>IOKI.Learning.Demo.WEB</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App\Controllers\Lessons\Intro\IntroCtrl.js" />
+    <Content Include="App\Controllers\Lessons\Lesson1\Topic2\Less1Topic2Ctrl.js" />
+    <Content Include="App\Controllers\Lessons\Lesson1\Topic1\Less1Topic1Ctrl.js" />
+    <Content Include="App\Controllers\Lessons\Lesson4\Less4Ctrl.js" />
+    <Content Include="App\Controllers\Lessons\Lesson3\Less3Ctrl.js" />
+    <Content Include="App\Controllers\Lessons\Lesson2\Less2Ctrl.js" />
+    <Content Include="App\Controllers\Lessons\Lesson1\Less1Ctrl.js" />
+    <Content Include="App\Controllers\MainWnd\MainCtrl.js" />
+    <Content Include="App\Controllers\Navigation\NavCtrl.js" />
+    <Content Include="App\main.js" />
+    <Content Include="App\Services\Navigation\NavSvr.js" />
+    <Content Include="Content\Less1Top1.css" />
+    <Content Include="Content\Less1Top1.png" />
+    <Content Include="JS\angular-route.min.js" />
+    <Content Include="JS\angular.min.js" />
+    <Content Include="JS\jquery-1.7.1.min.js" />
+    <Content Include="main.html" />
+    <Content Include="mockup\Activity_player_-_example_1_files\axurerp_pagespecificscript.js" />
+    <Content Include="mockup\Activity_player_-_example_1_files\axurerp_pagespecificstyles.css" />
+    <Content Include="mockup\Activity_player_-_example_1_files\axurerp_pagespecificstyles_ie6.css" />
+    <Content Include="mockup\Activity_player_-_example_1_files\data.js" />
+    <Content Include="mockup\Activity_player_-_example_1_files\navigation_u69_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u11_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u13_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u16_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u38_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u4_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u58_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u71_line.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u73_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u75_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u78_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u80_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u82_line.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u84_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u87_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u8_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\u91_normal.png" />
+    <Content Include="mockup\Activity_player_-_example_1_files\unit_bg_u1_normal.png" />
+    <Content Include="mockup\data\configuration.js" />
+    <Content Include="mockup\data\sitemap.js" />
+    <Content Include="mockup\mockup.html" />
+    <Content Include="mockup\plugins\sitemap\sitemap.js" />
+    <Content Include="mockup\plugins\sitemap\styles\images\case.gif" />
+    <Content Include="mockup\plugins\sitemap\styles\images\images.html" />
+    <Content Include="mockup\plugins\sitemap\styles\images\minus.gif" />
+    <Content Include="mockup\plugins\sitemap\styles\images\page.gif" />
+    <Content Include="mockup\plugins\sitemap\styles\images\plus.gif" />
+    <Content Include="mockup\plugins\sitemap\styles\sitemap.css" />
+    <Content Include="mockup\resources\css\axure_rp_page.css" />
+    <Content Include="mockup\resources\css\default.css" />
+    <Content Include="mockup\resources\css\images\images.html" />
+    <Content Include="mockup\resources\css\images\note.gif" />
+    <Content Include="mockup\resources\css\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="mockup\resources\css\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="mockup\resources\css\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="mockup\resources\css\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="mockup\resources\css\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="mockup\resources\css\images\ui-bg_glass_75_ffffff_1x400.png" />
+    <Content Include="mockup\resources\css\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="mockup\resources\css\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="mockup\resources\css\images\ui-icons_222222_256x240.png" />
+    <Content Include="mockup\resources\css\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="mockup\resources\css\images\ui-icons_454545_256x240.png" />
+    <Content Include="mockup\resources\css\images\ui-icons_888888_256x240.png" />
+    <Content Include="mockup\resources\css\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="mockup\resources\css\jquery-ui-themes.css" />
+    <Content Include="mockup\resources\css\reset.css" />
+    <Content Include="mockup\resources\expand.html" />
+    <Content Include="mockup\resources\Other.html" />
+    <Content Include="mockup\resources\reload.html" />
+    <Content Include="mockup\resources\scripts\axprototype.js" />
+    <Content Include="mockup\resources\scripts\axurerp_beforepagescript.js" />
+    <Content Include="mockup\resources\scripts\axurerp_pagescript.js" />
+    <Content Include="mockup\resources\scripts\axutils.js" />
+    <Content Include="mockup\resources\scripts\jquery-1.7.1.min.js" />
+    <Content Include="mockup\resources\scripts\jquery-ui-1.8.10.custom.min.js" />
+    <Content Include="mockup\resources\scripts\messagecenter.js" />
+    <Content Include="mockup\resources\scripts\splitter.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>19639</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:19639/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

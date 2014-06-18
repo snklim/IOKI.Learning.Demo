@@ -1,0 +1,63 @@
+﻿body {
+}
+
+.topic-container {
+    width: 968px;
+    height: 534px;
+}
+
+.movePrevActive {
+    background: url('Images/MovePrevActive.png');
+    width: 36px;
+    height: 36px;
+}
+
+.movePrevNotActive {
+    background: url('Images/MovePrevNotActive.png');
+    width: 36px;
+    height: 36px;
+}
+
+.moveNextActive {
+    background: url('Images/MoveNextActive.png');
+    width: 36px;
+    height: 36px;
+}
+
+.moveNextNotActive {
+    background: url('Images/MoveNextNotActive.png');
+    width: 36px;
+    height: 36px;
+}
+
+.less1Top1 {
+    left: 104px;
+    top: 14px;
+    position: relative;
+    background: url('Images/Less1Top1.png');
+    width: 760px;
+    height: 505px;
+}
+
+.less1Top2 {
+    left: 117px;
+    top: 55px;
+    position: relative;
+    background: url('Images/Less1Top2.png');
+    width: 733px;
+    height: 423px;
+}
+
+.lessPoint {
+    float:left;
+    background: url('Images/LessPoint.png');
+    width: 77px;
+    height: 37px;
+}
+
+.topPoint {
+    float:left;
+    background: url('Images/TopPoint.png');
+    width: 61px;
+    height: 37px;
+}

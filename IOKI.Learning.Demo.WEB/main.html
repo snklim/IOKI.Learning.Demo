@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="app">
+<head>
+    <title></title>
+    <script src="JS/jquery-1.7.1.min.js"></script>
+    <script src="JS/angular.min.js"></script>
+    <script src="App/main.js"></script>
+    <script src="App/Services/Navigation/NavSvr.js"></script>
+    <script src="App/Controllers/MainWnd/MainCtrl.js"></script>
+    <script src="App/Controllers/Navigation/NavCtrl.js"></script>
+    <script src="App/Controllers/Lessons/Intro/IntroCtrl.js"></script>
+    <script src="App/Controllers/Lessons/Lesson1/Less1Ctrl.js"></script>
+    <script src="App/Controllers/Lessons/Lesson1/Topic1/Less1Topic1Ctrl.js"></script>
+    <script src="App/Controllers/Lessons/Lesson1/Topic2/Less1Topic2Ctrl.js"></script>
+    <script src="App/Controllers/Lessons/Lesson2/Less2Ctrl.js"></script>
+    <script src="App/Controllers/Lessons/Lesson3/Less3Ctrl.js"></script>
+    <script src="App/Controllers/Lessons/Lesson4/Less4Ctrl.js"></script>
+    <link href="Content/Styles.css" rel="stylesheet" />
+</head>
+<body>
+    <script id="intro_body" type="text/html">
+        <div class="intro">INTRO</div>
+    </script>
+
+    <div ng-controller="MainCtrl">
+
+        <div class="lesson-container"></div>
+
+        <div class="topic-container"></div>
+
+        <div class="nav-bar" ng-controller="NavCtrl">
+            <div ng-class="{ movePrevActive: isPrevVisible(), movePrevNotActive: !isPrevVisible() }" ng-click="isPrevVisible() && prev()"></div>
+            <div ng-class="{ moveNextActive: isNextVisible(), moveNextNotActive: !isNextVisible() }" ng-click="isNextVisible() && next()"></div>
+            
+            <div>
+                <div ng-repeat="lessOrTop in lessonsAndTopics" ng-class="{lessPoint: lessOrTop.type == 'less', topPoint: lessOrTop.type == 'top'}"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script id="IntroHtml" type="text/html">
+        <div class="intro">INTRO</div>
+    </script>
+
+    <script id="Less1Html" type="text/html">
+        <div class="lesson" ng-controller="Less1Ctrl">LESSON 1</div>
+    </script>
+
+    <script id="Less1Topic1Html" type="text/html">
+        <div class="lesson" ng-controller="Less1Topic1Ctrl">TOPIC 1</div>
+        <div class="less1Top1"></div>
+    </script>
+
+    <script id="Less1Topic2Html" type="text/html">
+        <div class="lesson" ng-controller="Less1Topic2Ctrl">TOPIC 2</div>
+        <div class="less1Top2"></div>
+    </script>
+
+    <script id="Less2Html" type="text/html">
+        <div class="lesson" ng-controller="Less2Ctrl">LESSON 2</div>
+    </script>
+
+    <script id="Less3Html" type="text/html">
+        <div class="lesson" ng-controller="Less3Ctrl">LESSON 3</div>
+    </script>
+
+    <script id="Less4Html" type="text/html">
+        <div class="lesson" ng-controller="Less4Ctrl">LESSON 4</div>
+    </script>
+    
+</body>
+</html>
